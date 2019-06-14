@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{805A1A8A-76A8-4657-82F9-EF12FB3C96A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Winform_프로젝트</RootNamespace>
+    <AssemblyName>Winform 프로젝트</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Control.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wbClient.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아A.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아J.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아K.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\다이아Q.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\뒷면.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드A.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드J.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드K.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이드Q.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\스페이스10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버A.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버J.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버K.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\클로버Q.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트A.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트J.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트K.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Card\하트Q.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
